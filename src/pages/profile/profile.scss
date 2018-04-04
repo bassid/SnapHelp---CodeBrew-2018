@@ -1,0 +1,23 @@
+page-profile {
+    background-color: color($colors, light);
+}
+
+/* .profileNavBar {
+    text-align: center;
+} */
+
+.profilePic {
+    align-content: center;
+    //position: fixed; 
+    background-image: url(http://s3.amazonaws.com/medias.photodeck.com/8474eb58-d8ed-47b3-85f6-e3dee553ff72/Brett-Cole-India-03242_medium.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.profileContent {
+    position: fixed;
+    margin-top: 50%;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+}

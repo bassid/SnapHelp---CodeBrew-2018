@@ -1,25 +1,17 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+<ion-content>
+
+  <div class="camBtn">
+    <button ion-fab large id="camera" (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
-  </ion-navbar>
-</ion-header>
 
+    <button ion-fab small left id="profile" (click)="goToProfile()">
+      <ion-icon medium name="ios-contact-outline"></ion-icon>
+    </button>
 
-<ion-content padding>
-
-  <h3>Welcome to your first Ionic app!</h3>
-
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
+    <ion-card right id="camCard" (click)="goToPhoto()">
+      <img src={{picture}} />
+    </ion-card>
+  </div>
 
 </ion-content>
